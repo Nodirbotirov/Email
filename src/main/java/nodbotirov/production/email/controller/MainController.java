@@ -36,7 +36,6 @@ public class MainController {
         System.out.println(
                 "New row: " + catRepo.save(
                         Cat.builder()
-                                .id(1)
                                 .age(catDTO.getAge())
                                 .weight(catDTO.getWeight())
                                 .name(catDTO.getName())
