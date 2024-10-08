@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id:  create-table-pig
+      author:  nodir
+      comment: first liquibase migration
+      changes:
+        - createTable:
+            tableName:  pig
+            columns:
+              - column:
+                  name:  id
+                  type:  int
+                  autoIncrement:  true
+                  constraints:
+                    primaryKey:  true
+                    nullable:  false
+              - column:
+                  name:  name
+                  type:  varchar(50)
+              - column:
+                  name:  age
+                  type:  varchar(50)
+              - column:
+                  name:  city
+                  type:  varchar(63)
+
